@@ -8,37 +8,17 @@ The source code has been open-sourced and organized to support modern developmen
 
 ## 📁 Project Structure
 
-.
-├── common/              # Shared headers and source files used across all tools
-│   ├── brandgraph19.cpp/.h
-│   ├── bstring19.cpp/.h
-│   ├── float2string.cpp/.h
-│   └── brandheadr.h
-
-├── docs/                # Documentation and supporting materials
-│   └── ARVAR/           # Original ARVAR user manual
-
-├── tools/               # One subfolder per tool/program
-│   ├── archmkr5/
-│   ├── arvar5/
-│   ├── 2dstab/
-│   ├── damgen/
-│   ├── ldframe/
-│   ├── tgrib/
-│   ├── vf2d/
-│   ├── wedge/
-│   ├── wedgload/
-│   └── westergaard/
-
-│       Each contains:
-│       ├── .sln/.vcxproj/.cpp        # Visual Studio project + source
-│       └── build/                    # Build outputs (exe, pdb, obj, logs)
-│           ├── x64/Debug/            # Final executable and debug symbols
-│           └── intermediate/x64/...  # Compiler intermediate files
-
-├── build.props          # Shared build configuration for all tools
-├── .gitignore           # Ignores build artifacts, executables, temp files
-└── README.md            # Project overview, build instructions, and license
+- `common/` — Shared `.cpp` and `.h` files used by all tools
+- `Docs/` — Documentation and legacy reference material (e.g., ARVAR manual)
+- `old versions/` — Archived original, unmodified source code (e.g., `arvar5_old.cpp`)
+- `tools/` — One folder per tool, each containing:
+  - Source file(s), `.sln`, `.vcxproj`, and Visual Studio metadata
+  - A `build/` subfolder with:
+    - `x64/Debug/` — Final `.exe` and `.pdb`
+    - `intermediate/x64/Debug/` — Compiler logs and object files
+- `build.props` — Shared Visual Studio output configuration
+- `.gitignore` — Excludes executables and build artifacts
+- `README.md` — Project overview, build instructions, license
 
 ---
 
