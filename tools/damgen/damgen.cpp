@@ -1,9 +1,15 @@
 // damgen.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+// #include "stdafx.h"
 
-
+// ERROR CODES TO BE FIXED
+// Error code C4996 error thrown. strcpy and strcat are flagged as unsafe by modern Visual Studio and must be updated. Need to use modern functions like strcpy_s
+// Will ignore error for now using following
+#define _CRT_SECURE_NO_WARNINGS
+// Error code C4244 warning thrown. Double literal is being assined to float variables. Need to append 'f' to literals. 
+// Error code C4309 warning thrown. Need to cast or fix literal to fit variable type.
+// Error code C4101 error thrown. Unreferenced variable. Need to use or remove. 
 
 #include "iostream"
 #include "math.h"

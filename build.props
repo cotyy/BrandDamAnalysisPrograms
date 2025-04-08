@@ -1,0 +1,6 @@
+<Project>
+	<PropertyGroup Label="CustomBuildPaths">
+		<OutDir>$(SolutionDir)build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+		<IntDir>$(SolutionDir)build\$(ProjectName)\intermediate\$(Platform)\$(Configuration)\</IntDir>
+	</PropertyGroup>
+</Project>

@@ -4,7 +4,11 @@
 // wedgload.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+// Error C4996 thrown. sprintf is unsafe. Need to update to sprintf_s. 
+// Disabling deprecation
+#define _CRT_SECURE_NO_WARNINGS
+
+//#include "stdafx.h"
 #include <iostream>
 #include <fstream>
 #include <math.h>
