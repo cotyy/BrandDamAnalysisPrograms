@@ -4,7 +4,7 @@ This repository contains a collection of C++ programs developed by Bruce Brand (
 
 The source code has been open-sourced and organized to support modern development workflows. Minimal modifications have been made initially to preserve the original logic and structure. The programs are built using Visual Studio 2022 or later.
 
-This repository is maintained by Coty Young as a release of Bruce Brand’s original engineering software.
+This repository is maintained as a release of Bruce Brand’s original engineering software.
 
 ---
 
